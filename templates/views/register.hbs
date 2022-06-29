@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+
+<body>
+  {{>navbar}}
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+       <img src="https://visme.co/blog/wp-content/uploads/2020/02/header-1200.gif" alt="" srcset="" height="240" width="100%">
+      </div>
+      <div class="col-sm">
+        {{!-- <form action="/register" method="POST">
+          <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="First name"><b>First Name ...</b></label><br>
+            <input type="text" placeholder="Enter Name" name="first_name" id="name" required>
+            <br>
+            <label for="Last name"><b>Last Name ...</b></label><br>
+            <input type="text" placeholder="Enter Name" name="last_name" id="lastname" required>
+            <br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <br>
+            <label for="Phone number"><b>Phone number</b></label><br>
+            <input type="text" placeholder="Phone number" name="Phone_number" id="Phone number" required>
+            <br>
+            <hr>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            <br>
+            <label for="age"><b>Age</b></label><br>
+            <input type="text" placeholder="Your age" name="age" id="age" required>
+            <br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            <br>
+            <label for="cpassword"><b>Repeat Password</b></label><br>
+            <input type="password" placeholder="cPassword" name="cpassword" id="cpassword" required>
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+
+          <div class="container signin">
+            <p>Already have an account? <a href="/login"> sing up</a>.</p>
+          </div>
+        </form> --}}
+        <div class="col-sm">
+      <ul class="nav nav-pills mb-3 mt-2 " id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign in</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</button>
+  </li>
+
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <form action="/register" method="POST">
+          <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="First name"><b>First Name ...</b></label><br>
+            <input type="text" placeholder="Enter Name" name="first_name" id="name" required>
+            <br>
+            <label for="Last name"><b>Last Name ...</b></label><br>
+            <input type="text" placeholder="Enter Name" name="last_name" id="lastname" required>
+            <br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <br>
+            <label for="Phone number"><b>Phone number</b></label><br>
+            <input type="text" placeholder="Phone number" name="Phone_number" id="Phone number" required>
+            <br>
+            <hr>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            <br>
+            <label for="age"><b>Age</b></label><br>
+            <input type="text" placeholder="Your age" name="age" id="age" required>
+            <br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            <br>
+            <label for="cpassword"><b>Repeat Password</b></label><br>
+            <input type="password" placeholder="Repeat password" name="cpassword" id="cpassword" required>
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+
+          <div class="container signin">
+            <p>Already have an account? <a href="/login"> sing up</a>.</p>
+          </div>
+        </form>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><div class="background">
+    </div>
+         <form action="/login" method="POST">
+        <h3>Login Here</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCUK2anFms7_HaLVhWeNGM7Rd15Qrs-dPoA&usqp=CAU" alt="" height="30%">
+        <br>
+        <label for="username"><b> Email</b> </label><br>
+        <input type="text" placeholder="Email or Phone" id="username" name="email">
+<br>
+        <label for="password"><b> Password</b></label><br>
+        <input type="password" placeholder="Password" id="password" name="password">
+
+        <button class="registerbtn">Log In</button>
+    
+    </form></div>
+
+</div>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<body>
+  {{>navbar}}  
+
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <img src="https://cdn.dribbble.com/users/1429256/screenshots/6677821/jotform-mobile-forms.gif" alt="" srcset="" height="270">
+    </div>
+    <div class="col-sm">
+        <form action="/login" method="POST">
+        <h3>Login Here</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCUK2anFms7_HaLVhWeNGM7Rd15Qrs-dPoA&usqp=CAU" alt="" height="30%">
+        <br>
+        <label for="username"><b> Email</b> </label><br>
+        <input type="text" placeholder="Email or Phone" id="username" name="email">
+<br>
+        <label for="password"><b> Password</b></label><br>
+        <input type="password" placeholder="Password" id="password" name="password">
+
+        <button class="registerbtn">Log In</button>
+    
+    </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
